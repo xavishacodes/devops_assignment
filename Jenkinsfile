@@ -12,7 +12,7 @@ pipeline {
                   // sh 'scp -i devops_assignment.pem target/demo-app.jar ubuntu@ec2-54-80-186-150.compute-1.amazonaws.com:~/'
                   // sh 'ssh -i devops_assignment.pem ubuntu@ec2-54-80-186-150.compute-1.amazonaws.com "java -jar ~/demo-app.jar"'
                   print("test_2)
-                  sh "mvn spring-boot:run"
+                  sh '''mvn spring-boot:run'''
                         print('test_3')
               }
           }
