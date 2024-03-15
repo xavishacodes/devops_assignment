@@ -5,7 +5,7 @@ pipeline {
         stage('Build') { 
             steps {
                 print("checkpoint 1")
-                sh "mvn clean install -DskipTests"
+                bat 'mvn clean install -DskipTests'
                 print('test_1')
             }
         }
