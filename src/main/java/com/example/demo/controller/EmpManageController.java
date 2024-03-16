@@ -65,7 +65,7 @@ public class EmpManageController {
 
 		employeeservice.addEmployee(employee);
 		System.out.print(employee);
-		return "redirect:/";
+		return "redirect:/home";
 
 	}
 
